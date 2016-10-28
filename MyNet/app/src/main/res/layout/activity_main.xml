@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="android 联网测试" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tcp socket test"
+        android:id="@+id/btnSocket"
+        android:onClick="doButton"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="54dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tcp socket test2"
+        android:id="@+id/btnsocket2"
+        android:layout_below="@+id/btnSocket"
+        android:layout_alignLeft="@+id/btnSocket"
+        android:layout_alignStart="@+id/btnSocket"
+        android:onClick="doButton"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="聊天程序"
+        android:id="@+id/btnChat"
+        android:layout_below="@+id/btnsocket2"
+        android:layout_alignLeft="@+id/btnsocket2"
+        android:layout_alignStart="@+id/btnsocket2"
+        android:onClick="doButton"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="url test1"
+        android:id="@+id/btnUrl1"
+        android:layout_below="@+id/btnChat"
+        android:layout_alignLeft="@+id/btnChat"
+        android:layout_alignStart="@+id/btnChat"
+        android:onClick="doButton"
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="url test2"
+        android:id="@+id/btnUrl2"
+        android:layout_below="@+id/btnUrl1"
+        android:layout_alignLeft="@+id/btnUrl1"
+        android:layout_alignStart="@+id/btnUrl1"
+        android:onClick="doButton"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加载json数据"
+        android:id="@+id/btnJson"
+        android:layout_below="@+id/btnUrl2"
+        android:layout_alignLeft="@+id/btnUrl2"
+        android:layout_alignStart="@+id/btnUrl2"
+        android:onClick="doButton"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button4"
+        android:layout_below="@+id/btnJson"
+        android:layout_alignLeft="@+id/btnJson"
+        android:layout_alignStart="@+id/btnJson" />
+
+</RelativeLayout>
